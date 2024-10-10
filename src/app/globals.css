@@ -9,11 +9,11 @@
 }
 
 body {
-    @apply bg-[#0F1316] h-screen flex justify-center items-center font-sans;
+    @apply bg-[#10160f] h-screen flex justify-center items-center font-sans;
 }
 
 .container {
-    @apply relative w-96 bg-[#20292E] p-16 rounded-2xl flex flex-col justify-center items-center;
+    @apply relative w-96 bg-[#324234] p-16 rounded-2xl flex flex-col justify-center items-center bg-opacity-10;
 }
 
 .container .disk {
@@ -21,7 +21,7 @@ body {
 }
 
 .container .disk .cover {
-    @apply w-full h-full bg-cover bg-center border-4 border-[#EAEFF2] rounded-full shadow-md transition-all;
+    @apply w-full h-full bg-cover bg-center border-[#3ca138] rounded-full shadow-md transition-all;
 }
 
 .container .song-info {
@@ -29,7 +29,7 @@ body {
 }
 
 .container .progress-bar {
-    @apply w-full bg-[#192024] rounded-full cursor-pointer h-1.5 relative mb-1;
+    @apply w-full bg-[#8c9e8c] rounded-full cursor-pointer h-1.5 relative mb-1;
 }
 
 .container .progress-bar .fill-bar {
@@ -37,7 +37,7 @@ body {
 }
 
 .container .song-time {
-    @apply flex justify-between text-sm text-[#6C7F89] w-full mb-5;
+    @apply flex justify-between text-sm text-[#c3e2c4] w-full mb-5;
 }
 
 .container .controls {
@@ -49,15 +49,15 @@ body {
 }
 
 .play-btn {
-    @apply bg-[#DF2F31];
+    @apply bg-[#278823];
 }
 
 .play-btn:hover {
-    @apply bg-[#8E312D];
+    @apply bg-[#14551d];
 }
 
 .previous-btn:hover, .next-btn:hover {
-    @apply bg-white bg-opacity-10;
+    @apply bg-[#5fc074] bg-opacity-10;
 }
 
 .volume-control {
@@ -69,7 +69,7 @@ body {
 }
 
 .sidebar {
-    @apply w-72 bg-[#20292E] p-5 fixed left-0 top-0 h-full overflow-y-auto;
+    @apply w-72 bg-[#222e20] p-5 fixed left-0 top-0 h-full overflow-y-auto;
 }
 
 .sidebar h3 {
@@ -85,12 +85,12 @@ body {
 }
 
 #playlist li:hover {
-    @apply bg-[#192024];
+    @apply bg-[#324234] bg-opacity-20;
 }
 
 #playlist li.active {
-    @apply bg-[#2fdf5b];
-    @apply text-xl mb-4 text-[#152919];
+    @apply bg-[#324234];
+    @apply text-xl mb-4 text-[#33b14c];
 }
 
 .song-name {

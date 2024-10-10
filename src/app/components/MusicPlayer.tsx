@@ -82,7 +82,14 @@ const MusicPlayer: React.FC<MusicPlayerProps> = ({ currentSong, songsList, setCu
             <div className="disk">
                 <div 
                     className="cover" 
-                    style={{ backgroundImage: `url(${songsList[currentSong]?.cover})` }}>
+                    style={{
+                        backgroundImage: `url(${songsList[currentSong]?.cover})`,
+                        width: '250px', // Largura do quadrado
+                        height: '200px', // Altura do quadrado
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        borderRadius: '0', // Garante que não seja circular
+                    }}>
                 </div>
             </div>
             <div className="song-info">
